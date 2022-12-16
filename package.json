@@ -4,12 +4,13 @@
   "description": "A payroll management system",
   "main": "index.js",
   "scripts": {
-    "app": "NODE_ENV=development nodemon"
+    "app": "NODE_ENV=development node src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HamfordL/payroll.git"
   },
+  "type": "module",
   "author": "Hamford Lam",
   "license": "MIT",
   "bugs": {
