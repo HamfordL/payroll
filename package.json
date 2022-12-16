@@ -4,7 +4,7 @@
   "description": "A payroll management system",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "app": "NODE_ENV=development nodemon"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
   },
   "dependencies": {
