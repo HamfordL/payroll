@@ -1,11 +1,12 @@
+import fs from 'fs';
+import path from 'path';
+
 let user;
 let password;
 let host = 'localhost';
 let database;
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = process.env.NODE_ENV === 'development';
-const fs = require('fs');
-const path = require('path');
 
 if (isDev || isProd) {
   // for the app on local machines
@@ -17,7 +18,7 @@ if (isDev || isProd) {
   [user, password, database] = process.argv.slice(-3).map(_ => _.replace(/"/g, '').split('=')[1]);
 }
 
-module.exports = {
+export default {
   development: {
     client: 'pg',
     connection: {
