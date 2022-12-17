@@ -15,7 +15,7 @@ pg.types.setTypeParser(pg.types.builtins.NUMERIC, value => parseFloat(value));
 // setup env vars
 dotenv.config();
 
-// init server
+// instantiate server
 const app = express();
 const port = 9000;
 

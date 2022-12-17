@@ -1,0 +1,5 @@
+.env
+src/db.env
+dist
+.git
+node_modules/
