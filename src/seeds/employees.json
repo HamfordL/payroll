@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Deangelo McCallum",
+    "salary": 100000,
+    "phone_number": 1234567,
+    "email": "aaa@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 2
+  },
+  {
+    "id": 2,
+    "name": "Ellen Huss",
+    "salary": 85000,
+    "phone_number": 1234567,
+    "email": "bbb@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 1
+  },
+  {
+    "id": 3,
+    "name": "James Miller",
+    "salary": 65000,
+    "phone_number": 1234567,
+    "email": "ccc@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Ruth Hyde",
+    "salary": 70000,
+    "phone_number": 1234567,
+    "email": "ddd@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 3
+  },
+  {
+    "id": 5,
+    "name": "Adam Street",
+    "salary": 110000,
+    "phone_number": 1234567,
+    "email": "eee@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 4
+  },
+  {
+    "id": 6,
+    "name": "Martha Price",
+    "salary": 95000,
+    "phone_number": 1234567,
+    "email": "fff@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 2
+  },
+  {
+    "id": 7,
+    "name": "Gwendolyn M. Dean",
+    "salary": 120000,
+    "phone_number": 1234567,
+    "email": "ggg@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 5
+  },
+  {
+    "id": 8,
+    "name": "George B. Stanford",
+    "salary": 88000,
+    "phone_number": 1234567,
+    "email": "hhh@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 6
+  },
+  {
+    "id": 9,
+    "name": "Elaine D. Hernandez",
+    "salary": 115000,
+    "phone_number": 1234567,
+    "email": "iii@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 7
+  },
+  {
+    "id": 10,
+    "name": "Merry A. Estrada",
+    "salary": 135000,
+    "phone_number": 1234567,
+    "email": "jjj@bigbank.com",
+    "tax_pct_withheld": 0,
+    "medical_withheld": 0,
+    "other_deductions": 0,
+    "department_id": 6
+  }
+]

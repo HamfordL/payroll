@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Taurus",
+    "manager_id": 2
+  },
+  {
+    "id": 2,
+    "name": "Gemini",
+    "manager_id": 4
+  },
+  {
+    "id": 3,
+    "name": "Bento",
+    "manager_id": 10
+  }
+]
