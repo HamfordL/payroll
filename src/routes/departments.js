@@ -21,5 +21,5 @@ departmentRoute.get('/:id', (req, res) => {
     return res.status(400).json({ message: 'Bad Request. Value for id must be a valid number.' });
   }
 
-  return queries.getDepartmentsById(dept_id).then(dept => res.status(200).json(dept));
+  return queries.getDepartmentById(dept_id).then(dept => res.status(200).json(dept));
 });

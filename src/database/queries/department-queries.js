@@ -1,4 +1,4 @@
-import Departments from '../models/departments';
+import Departments from '../models/Department';
 
 const getDepartments = () => {
   const query = new Departments();
@@ -6,10 +6,10 @@ const getDepartments = () => {
   return query.fetchAll().then(dbModel => dbModel.toJSON());
 };
 
-const getDepartmentsById = id => {
+const getDepartmentById = id => {
   const query = new Departments({ id });
 
   return query.fetch().then(dbModel => dbModel.toJSON());
 };
 
-export default { getDepartments, getDepartmentsById };
+export default { getDepartments, getDepartmentById };

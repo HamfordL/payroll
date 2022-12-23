@@ -1,5 +1,7 @@
-import departmentsQueries from './departments-queries';
+import departmentQueries from './department-queries';
+import employeeQueries from './employee-queries';
 
 export default {
-  ...departmentsQueries,
+  ...departmentQueries,
+  ...employeeQueries,
 };
