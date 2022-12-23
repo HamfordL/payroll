@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { departmentsRoute } from './departments';
+import { departmentsRoute, departmentRoute } from './departments';
 
 const router = express.Router();
 
@@ -9,5 +9,6 @@ router.get('/', (req, res) => {
 });
 
 router.use('/departments', departmentsRoute);
+router.use('/department', departmentRoute);
 
 export default router;

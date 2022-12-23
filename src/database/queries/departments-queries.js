@@ -6,4 +6,10 @@ const getDepartments = () => {
   return query.fetchAll().then(dbModel => dbModel.toJSON());
 };
 
-export default { getDepartments };
+const getDepartmentsById = id => {
+  const query = new Departments({ id });
+
+  return query.fetch().then(dbModel => dbModel.toJSON());
+};
+
+export default { getDepartments, getDepartmentsById };
