@@ -1,6 +1,6 @@
 import knex from 'knex';
 import bookshelf from 'bookshelf';
-import knexConfig from '@src/knexfile';
+import knexConfig from '../knexfile';
 
 export default class Connection {
   static dbInstance = new Connection();

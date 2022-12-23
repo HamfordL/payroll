@@ -7,6 +7,8 @@ import pg from 'pg';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
+import routes from './routes';
+
 // type-proof pg inputs
 pg.types.setTypeParser(pg.types.builtins.INT8, value => parseInt(value));
 pg.types.setTypeParser(pg.types.builtins.FLOAT8, value => parseFloat(value));
@@ -41,7 +43,8 @@ app.use(cors());
 app.get('/health', (req, res) => res.status(200).json({ status: 'OK' }));
 
 // application routes
-// TODO: add routes
+app.use('/api/v0', routes);
+app.get('/', (req, res) => res.redirect('/api/v0'));
 
 // error handler
 app.use((error, req, res, next) => {

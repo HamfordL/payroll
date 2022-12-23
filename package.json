@@ -7,8 +7,8 @@
     "app": "cross-env NODE_ENV=development node -r esm src/index.js",
     "start-db": "docker-compose up -d",
     "setup-db": "npm run migrate && npm run seed",
-    "migrate": "npx knex --esm --knexfile src/knexfile.js migrate:latest process.platform === 'win32' ? `type src/db.env` : `echo $(cat src/db.env)`",
-    "seed": "npx knex --esm --knexfile src/knexfile.js seed:run process.platform === 'win32' ? `type src/db.env` : `echo $(cat src/db.env)`"
+    "migrate": "npx knex --esm --knexfile src/knexfile.js migrate:latest `echo $(cat src/db.env)`",
+    "seed": "npx knex --esm --knexfile src/knexfile.js seed:run `echo $(cat src/db.env)`"
   },
   "repository": {
     "type": "git",
@@ -43,6 +43,7 @@
     "swagger-ui-express": "^4.6.0"
   },
   "imports": {
-    "@src": "./src"
+    "@src": "src",
+    "@database": "src/database"
   }
 }
