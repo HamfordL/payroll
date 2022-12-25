@@ -1,6 +1,6 @@
 import Projects from '../models/Project';
 
-const getProjectss = () => {
+const getProjects = () => {
   const query = new Projects();
 
   return query.fetchAll().then(dbModel => dbModel.toJSON());
@@ -12,4 +12,4 @@ const getProjectsById = id => {
   return query.fetch().then(dbModel => dbModel.toJSON());
 };
 
-export default { getProjectss, getProjectsById };
+export default { getProjects, getProjectsById };
