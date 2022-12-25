@@ -1,15 +1,15 @@
-import Projects from '../models/Project';
+import Project from '../models/Project';
 
 const getProjects = () => {
-  const query = new Projects();
+  const query = new Project();
 
   return query.fetchAll().then(dbModel => dbModel.toJSON());
 };
 
-const getProjectsById = id => {
-  const query = new Projects({ id });
+const getProjectById = id => {
+  const query = new Project({ id });
 
   return query.fetch().then(dbModel => dbModel.toJSON());
 };
 
-export default { getProjects, getProjectsById };
+export default { getProjects, getProjectById };

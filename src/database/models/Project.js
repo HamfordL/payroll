@@ -8,7 +8,7 @@ class Project extends bookshelf.Model {
   }
 
   // employees() {
-  //   return this.hasMany(Employee, 'project_id', 'id');
+  //   return this.hasMany(Employee, Department, 'project_id', 'id');
   // }
 }
 
