@@ -14,7 +14,7 @@ router.use('/departments', departmentsRoute);
 router.use('/department', departmentRoute);
 router.use('/employees', employeesRoute);
 router.use('/employee', employeeRoute);
-router.use('/Projects', projectsRoute);
-router.use('/Project', projectRoute);
+router.use('/projects', projectsRoute);
+router.use('/project', projectRoute);
 
 export default router;

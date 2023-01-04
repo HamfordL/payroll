@@ -6,7 +6,7 @@ export const projectsRoute = express.Router({ mergeParams: true });
 export const projectRoute = express.Router({ mergeParams: true });
 
 projectsRoute.get('/', (req, res) => {
-  return queries.getProjects().then(departments => res.status(200).json(departments));
+  return queries.getProjects().then(projects => res.status(200).json(projects));
 });
 
 projectRoute.get('/:id', (req, res) => {
@@ -16,10 +16,10 @@ projectRoute.get('/:id', (req, res) => {
     return res.status(400).json({ message: 'Bad Request. Missing id in path.' });
   }
 
-  const dept_id = Number(id);
-  if (Number.isNaN(dept_id)) {
+  const project_id = Number(id);
+  if (Number.isNaN(project_id)) {
     return res.status(400).json({ message: 'Bad Request. Value for id must be a valid number.' });
   }
 
-  return queries.getProjectById(dept_id).then(dept => res.status(200).json(dept));
+  return queries.getProjectById(project_id).then(project => res.status(200).json(project));
 });

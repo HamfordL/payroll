@@ -12,7 +12,10 @@ if (isDev || isProd) {
   // for the app on local machines
   const dbVars = fs.readFileSync(path.join(__dirname, './db.env'), 'utf-8');
 
-  [user, password, database] = dbVars.split('\n').map(_ => _.split('=')[1]);
+  [user, password, database] = dbVars
+    .split('\n')
+    .map(_ => _.split('=')[1])
+    .map(_ => (_ || '').toString().replace(/[\\\n\r]/g, ''));
 } else {
   // terminal commands
   [user, password, database] = process.argv.slice(-3).map(_ => _.replace(/"/g, '').split('=')[1]);
